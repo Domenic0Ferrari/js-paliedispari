@@ -32,10 +32,8 @@ console.log(somma);
 function isEven (number1, number2){
     if ((number1 + number2) % 2 == 0){
         console.log("La somma è pari");
-        return true;
     } else{
         console.log("La somma è dispari");
-        return false;
     }
 }
 
