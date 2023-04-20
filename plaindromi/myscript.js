@@ -10,20 +10,35 @@ console.log("La parola inserita è:" + " " + parolaUtente);
 
 // scomponiamo la parola in lettera per lettera
 
-let parolaDivisa = parolaUtente.split('');
-console.log(parolaDivisa);
+// let parolaDivisa = parolaUtente.split('');
+// console.log(parolaDivisa);
 
 // scriviamo la parola al contrario
 
-let parolaInvertita = parolaDivisa.reverse('');
-console.log(parolaInvertita);
+// let parolaInvertita = parolaDivisa.reverse('');
+// console.log(parolaInvertita);
 
 // riuniamo la parola scritta al contario
 
-let parolaAlContrario = parolaInvertita.join('');
-console.log(parolaAlContrario);
+// let parolaAlContrario = parolaInvertita.join('');
+// console.log(parolaAlContrario);
 
 // confrontiamo le due parole
+
+// if (parolaUtente == parolaAlContrario){
+//     console.log("La tua parola è palindroma");
+// } else{
+//     console.log("La tua parola non è palindroma");
+// }
+
+// scriviamo tutto questo con una funzione
+
+function invertiParola(str){
+    let strInverse = str.split('').reverse().join(''); 
+    return strInverse;
+}
+
+let parolaAlContrario = invertiParola(parolaUtente);
 
 if (parolaUtente == parolaAlContrario){
     console.log("La tua parola è palindroma");
