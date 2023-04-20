@@ -16,7 +16,10 @@ Dichiariamo chi ha vinto
 let oddOrEven = prompt("Scegli pari o dispari");
 console.log("Hai scelto:" + " " + oddOrEven);
 
-let userNumber = parseInt(prompt("Scegli un numero compreso tra 1 e 5"));
+if(oddOrEven !== ("pari" || "dispari")){
+    console.log("Inserire un valore valido")
+} else{
+    let userNumber = parseInt(prompt("Scegli un numero compreso tra 1 e 5"));
 console.log("Il numero scelto è:" + " " + userNumber);
 
 function randomNumber(min,max){
@@ -44,3 +47,33 @@ if (oddOrEven == "pari" && isEven(userNumber, pcNumber)){
 } else{
     console.log("Hai perso!");
 }
+}
+
+// let userNumber = parseInt(prompt("Scegli un numero compreso tra 1 e 5"));
+// console.log("Il numero scelto è:" + " " + userNumber);
+
+// function randomNumber(min,max){
+//     return Math.floor(Math.random()*(max-min+1)+min);
+// }
+
+// let pcNumber = randomNumber(1, 5);
+// console.log("Il numero del computer è:" + " " + pcNumber);
+
+// let somma = userNumber + pcNumber;
+// console.log(somma);
+
+// function isEven (number1, number2){
+//     if ((number1 + number2) % 2 == 0){
+//         console.log("La somma è pari");
+//     } else{
+//         console.log("La somma è dispari");
+//     }
+// }
+
+// if (oddOrEven == "pari" && isEven(userNumber, pcNumber)){
+//     console.log("Hai vinto!");
+// } else if (oddOrEven == "dispari" && !isEven(userNumber, pcNumber)){
+//     console.log("Hai vinto!");
+// } else{
+//     console.log("Hai perso!");
+// }
